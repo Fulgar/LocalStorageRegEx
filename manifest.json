@@ -1,0 +1,23 @@
+{
+   "author": "Jason James",
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+	  "matches": ["http://*/*", "https://*/*"]
+   } ],
+   "description": "Fetches values from local storage on pages via RegEx search of key name",
+   "manifest_version": 2,
+   "name": "Local Storage RegEx",
+   "version": "1.0.0",
+   "browser_action": {
+	   "default_popup": "popup.html",
+	   "default_icon": "icon.png",
+	   "default_title": "LSRX"
+   },
+   "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+	"storage"
+  ]
+}
