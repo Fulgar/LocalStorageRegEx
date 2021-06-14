@@ -1,0 +1,1 @@
+![Screenshot of Querying all strings](https://i.imgur.com/XAmPD62.png)
